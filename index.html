@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صوتُ القرآن</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav>
+        <div class="navbar obj-width">
+            <a class="logo" href="index.html"> صوتُ القرآن</a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Quran Audio Player</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a href="Main.html">Quran Surah Read</a></li>
+                </ul>
+                <ul>
+                    <li><a href="Tajweed.html">Read with Tajweed</a></li>
+                </ul>
+
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="player">
+            <!-- Sajda Notice -->
+            <div class="sajdaNotice" style="color: orange; font-size: 18px; margin-bottom: 10px; text-align: center;"></div>
+
+           
+            <div class="ayah">Audio List</div>
+
+            <audio src="" class="quranplayer" controls></audio>
+
+
+            <!-- Buttons -->
+            <div class="button">
+                <div class="icon next"><i class="fas fa-forward"></i></div>
+                <div class="icon play"><i class="fas fa-play"></i></div>
+                <div class="icon prev"><i class="fas fa-backward"></i></div>
+            </div>
+        </div>
+
+        <!-- Surah List -->
+        <div class="surahs"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>صوتُ القرآن</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Optional CSS styling for surah cards and detail section */
+    #blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .blog-card {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+    .blog-card:hover {
+      transform: scale(1.03);
+      background-color: #f0f8ff;
+    }
+    #surah-detail {
+      margin-top: 1rem;
+    }
+    #surah-title h2 {
+      margin-bottom: 1rem;
+    }
+    #ayah-list p {
+      background: #fff;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    #surah-detail button {
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav>
+        <div class="navbar obj-width">
+            <a class="logo" href="index.html"> صوتُ القرآن</a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Quran Audio Player</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a href="Main.html">Quran Surah Read</a></li>
+                </ul>
+                <ul>
+                    <li><a href="Tajweed.html">Read with Tajweed</a></li>
+                </ul>
+
+    </nav>
+  <!-- Hero Slider (if needed) -->
+  <div class="hero-slider obj-width" id="hero-slider">
+    <!-- Slides will be injected dynamically -->
+  </div>
+
+  <!-- Main Container for Surah Cards -->
+  <main class="obj-width" id="blog-container">
+    <!-- Surah cards will be loaded here -->
+  </main>
+
+  <!-- Section for Showing Surah Ayahs -->
+  <section class="obj-width" id="surah-detail" style="display:none;">
+    <button onclick="goBack()">⬅ واپس جائیں</button>
+    <div id="surah-title"></div>
+    <div id="ayah-list"></div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
